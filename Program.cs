@@ -10,16 +10,23 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-        Start:
-            string TheirName;
             string Correct = "BREAK";
-            Console.WriteLine("What is your name?");
-            TheirName = Console.ReadLine();
-            Console.WriteLine("Hello " + TheirName);
+            while (Console.ReadLine != Correct(true))
             
-            Console.ReadKey();
-            if (TheirName != Correct) { goto Start; }
-            Console.WriteLine(TheirName);
+            {
+
+                string TheirName;
+                Console.WriteLine("What is your name?");
+                TheirName = Console.ReadLine();
+                Console.WriteLine("Hello " + TheirName);
+
+                Console.ReadKey();
+                if (TheirName != Correct)
+                {
+                
+                }
+                
+            }
         }
         
     }
